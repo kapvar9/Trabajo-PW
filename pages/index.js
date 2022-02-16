@@ -12,9 +12,9 @@ export default function Home() {
     //funcion que permita loggearse
     const loginHandler = (username,password) =>{
       if (username == "admin" && password == "123") {
-        location.href = "/mainAdmin"
+        location.href = "../mainAdmin"
       }else {
-        location.href = "/mainCliente"
+        location.href = "../mainCliente"
       }
     }
     
