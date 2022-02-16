@@ -1,8 +1,9 @@
-import Image from "next/image"
 import Banner from "../components/banner.components"
 import Footer from "../components/footer.components"
 import FormularioLogin from "../components/formulario_login.components"
 import RegistroBoton from "../components/registro_boton.components"
+import { Image } from "react-bootstrap"
+import Cabecera from "../components/header.components"
 
 
 
@@ -21,11 +22,10 @@ export default function Home() {
       {/**Agregar cabecera */}
       <header className ="container-fluid d-flex align-items-center">
         <div className="d-flex align-items-center fs-4 text-white mb-0">
-            <img src="https://www.pngmart.com/files/15/Gold-Bitcoin-Transparent-PNG.png" className="me-3" width="46" height="38" alt="Bootstrap"/>
-            <h1>Crypto-nita</h1>  
+            <Image src="/Images/LogoBitcoin.png" className="logo me-3" width="46" height="38" alt="Bootstrap"/>
+            <h1>Crypto-nita</h1> 
         </div>
         <div className="ms-auto">
-              {/**Se llama al componente botones */}
              <RegistroBoton onRegistro = {registroHandler}/>    
         </div>           
         
