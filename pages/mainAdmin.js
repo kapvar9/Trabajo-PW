@@ -1,6 +1,7 @@
 import Cabecera from "../components/header.components"
 import MenuNavegacionAdmin from "../components/menu_navegacion_admin.components"
-function mainAdmin() {
+
+function MainAdmin() {
     return <div>
         <div>
             <header>
@@ -19,4 +20,4 @@ function mainAdmin() {
     </div>
   }
   
-  export default mainAdmin
+  export default MainAdmin
