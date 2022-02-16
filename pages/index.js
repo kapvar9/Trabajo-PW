@@ -3,16 +3,21 @@ import Footer from "../components/footer.components"
 import FormularioLogin from "../components/formulario_login.components"
 import RegistroBoton from "../components/registro_boton.components"
 import { Image } from "react-bootstrap"
-import Cabecera from "../components/header.components"
+
 
 
 
 export default function Home() {
 
     //funcion que permita loggearse
-    const loginHandler = () =>{
-      location.href = "/mainUsuario"
+    const loginHandler = (username,password) =>{
+      if (username == "admin" && password == "123") {
+        location.href = "/mainCliente"
+      }else {
+        location.href = "/mainAdmin"
     }
+}
+    
     const registroHandler = () =>{
       location.href = "/registro"
     }
