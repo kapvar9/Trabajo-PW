@@ -21,7 +21,7 @@ export default function Home() {
     }
     
     const registroHandler = () =>{
-      location.href = "/registro"
+      location.href = "/registrarClienteP1"
     }
 
    
