@@ -1,6 +1,6 @@
 
 import { useState } from "react"   // esto  se usa para importar el "state "
-const UpdateMoneyExchange = (props) =>{
+const UpDateMoneyExchange = (props) =>{
 
     const [PENTOBTC, setPENTOBTC] = useState(0)
     const [BTCTOPEN, setBTCTOPEN] = useState(0)
@@ -46,4 +46,4 @@ const UpdateMoneyExchange = (props) =>{
         </div>
     </aside>
 }
-export default UpdateMoneyExchange
+export default UpDateMoneyExchange

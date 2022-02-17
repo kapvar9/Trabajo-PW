@@ -1,8 +1,7 @@
 
 
 import Footer from "../components/footer.components"
-import UpdateMoneyExchange from "../components/UpdateMoneyExchange.components"
-
+import UpdateMoneyExchange from "../components/updatemoneyexchange.components"
 
 
 
