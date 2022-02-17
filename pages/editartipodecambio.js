@@ -1,6 +1,6 @@
 
 import Footer from "../components/footer.components"
-import UpdateMoneyExchange from "../components/UpdateMoneyExchange.components"
+import updatemoneyexchange from "../components/updatemoneyexchange.components"
 
 
 
@@ -34,7 +34,7 @@ export default function Home() {
          
 
           <div className= "p-auto">
-              <UpdateMoneyExchange style="margin:0 auto" />
+              <updatemoneyexchange style="margin:0 auto" />
           </div>
           
         </div>
