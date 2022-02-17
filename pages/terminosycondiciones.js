@@ -1,10 +1,10 @@
 
 import Footer from "../components/footer.components"
-import Cabecera from "../components/header.components"
+import Cabecera1 from "../components/header2.components"
 function TerminosYCondiciones() {
     return <div>
         <header>
-                <Cabecera/>  
+                <Cabecera1/>  
         </header>
         <div id="boton1">
         <a href=".." className="btn btn-success">Regresar</a>

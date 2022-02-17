@@ -1,10 +1,10 @@
-import Head from "next/head"
+
 import Footer from "../components/footer.components"
-import Cabecera from "../components/header.components"
+import Cabecera1 from "../components/header2.components"
 function TerminosYCondiciones() {
     return <div>
         <header>
-                <Cabecera/>  
+                <Cabecera1/>  
         </header>
         <a href=".." className="btn btn-success">Siguiente</a>
         <h1 id="term">Estos son los terminos y condiciones</h1>

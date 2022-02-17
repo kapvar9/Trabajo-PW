@@ -1,10 +1,10 @@
-import Cabecera from "../components/header.components"
+import Cabecera1 from "../components/header2.components"
 import Footer from "../components/footer.components"
 
 function esperaCliente() {
     return <div>
         <div>
-            <Cabecera />
+            <Cabecera1 />
         </div>
 
         <h1 className="tituloEspera">Por favor, espere un momento</h1>
