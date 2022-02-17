@@ -1,6 +1,6 @@
 
 import Footer from "../components/footer.components"
-import BuyOrSellMoney from "../components/BuyOrSellMoney.components"
+import buyOrSellMoney from "../components/buyOrSellMoney.components"
 
 
 
@@ -34,7 +34,7 @@ export default function Home() {
          
 
           <div className= "p-auto">
-              <BuyOrSellMoney style="margin:0 auto" />
+              <buyOrSellMoney style="margin:0 auto" />
           </div>
           
         </div>
