@@ -1,5 +1,5 @@
 import Footer from "../components/footer.components"
-import MenuNavegacionCliente from "../components/menu_navegacion_cliente.components"
+import MenuNavegacionAdmin from "../components/menu_navegacion_cliente.components"
 import CerrarSesionBoton from "../components/cerrarsesion_boton.components"
 import ListaOperaciones from "../components/lista_operaciones.components"
 import { Image } from "react-bootstrap"
@@ -35,7 +35,7 @@ function Historia32() {
             </header>
         </div>
         <div>
-            <MenuNavegacionCliente />
+            <MenuNavegacionAdmin />
         </div>
         
         <div className="mt-4">

@@ -14,7 +14,7 @@ const MenuNavegacionCliente = () => {
                         <a className="nav-link" aria-current="page" href="../ComprarYVender">Comprar/vender</a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" aria-current="page" href="../historia32">Historial</a>
+                        <a className="nav-link" aria-current="page" href="../historialcliente">Historial</a>
                     </li>
                 </ul>
             </div>
