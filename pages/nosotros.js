@@ -1,11 +1,16 @@
 import Cabecera from "../components/header.components"
-
+import NosotrosEtiqueta from "../components/nosotrosEtiqueta.components"
+import Footer from "../components/footer.components"
 function Nosotros() {
     return <div>
         <div>
-            <Cabecera/>
+            <Cabecera />
         </div>
-        <h1>Nosotros</h1>
+        <a href=".." class="btn btn-success">Regresar</a>
+        
+        <h1 id="titulo">Nosotros</h1>
+        <NosotrosEtiqueta />
+        <Footer />
     </div>
   }
   

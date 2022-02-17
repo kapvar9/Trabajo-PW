@@ -18,7 +18,7 @@ const RegistroP2 = () => {
             </div>
             <div className="boton md-8">
             <a href="../registrarClienteP1" class="btn btn-success">Regresar</a>
-            <a href="../registrarClienteP2" class="btn btn-success">Siguiente</a>
+            <a href="../esperaCliente" class="btn btn-success">Siguiente</a>
             </div>
         </form>
         
