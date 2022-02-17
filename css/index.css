@@ -56,6 +56,12 @@
     margin: auto;
     display: block;
 }
+#imagenA{
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    display: block;
+}
 .tituloEspera{
     text-align: center;
     margin-top: 20px;
@@ -100,12 +106,7 @@
     margin-right: 100px;
     margin-left: 100px;
 }
-#imagenAD{
-    width: 5px;
-    height: 10px;
-    
-    
-}
+
 #cardN{
     text-align: center;
 }
