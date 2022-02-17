@@ -4,21 +4,21 @@ const RegistroP1 = () => {
             <h2 id="TituloRegistrar">Registrar: Paso 1</h2>
             <div id="contenedorRegistro">
             <form>
-                <div class="form-group">
+                <div className="form-group">
                     <label for="NombreUsuario">Nombre</label>
                     <input type="name" className="form-control" id="NombreUsuario" aria-describedby="emailHelp" placeholder="Nombre" />                 
                 </div>
     
-                <div class="form-group">
+                <div className="form-group">
                     <label for="ApellidoUsuario">Apellido</label>
                     <input type="name" className="form-control" id="ApellidoUsuario" aria-describedby="emailHelp" placeholder="Apellido" />                 
                 </div>
     
-                <div class="form-group">
+                <div className="form-group">
                     <label for="DNIUsuario">DNI</label>
                     <input type="name" className="form-control" id="DNIUsuario" aria-describedby="emailHelp" placeholder="DNI" />                 
                 </div>
-                <a href="../registrarClienteP2" class="btn btn-success">Siguiente</a>
+                <a href="../registrarClienteP2" className="btn btn-success">Siguiente</a>
                 
             </form>
             </div>
