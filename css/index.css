@@ -66,3 +66,11 @@
     margin: auto;
     display: block;
 }
+.list-group{
+    
+    margin: auto;
+    width: 400px;
+}
+#tituloC{
+    text-align: center;
+}
