@@ -39,7 +39,7 @@ function MainAdmin() {
                                     <Image src="../images/profile1.jpg" className="rounded-circle user_img" height="60px" width="50px"/> 
                                 </div>
                                 <div className="col-md-9 info_usuario">
-                                    <h6>Khalid</h6> 
+                                    <h6>Khalid</h6>
                                     <p>Enviaste el correo?</p>
                                 </div>
                             </li>
@@ -69,7 +69,7 @@ function MainAdmin() {
                 <div className="col-md-4">
                     <div className="card-header bg-primary text-white text-center"><h6>TAREAS</h6></div>
                     <div className="input-group mb-3 mt-2">
-                    <input type="text" className="form-control" placeholder="Escribe la nueva tarea" aria-label="Recipient's username" aria-describedby="basic-addon2"/>
+                    <input type="text" className="form-control" placeholder="Nueva tarea" aria-label="Recipient's username" aria-describedby="basic-addon2"/>
                     <div className="input-group-append">
                          <button className="btn btn-secondary" type="button">Agregar</button>
                         </div>
