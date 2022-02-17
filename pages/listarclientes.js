@@ -3,6 +3,8 @@ import Cabecera from "../components/header.components"
 import MenuNavegacionAdmin from "../components/menu_navegacion_admin.components"
 import { Image } from "react-bootstrap"
 import Footer from "../components/footer.components"
+import SearchIcon from '@mui/icons-material/Search'
+
 
 function ListarClientes () {
     return <div>
@@ -19,7 +21,7 @@ function ListarClientes () {
             <div className="card-body">
                 <div className="input-group mb-3 mt-4">
                     <input type="text" className="form-control" placeholder="Ingrese el término de búsqueda"/>
-                    <button className="btn btn-secondary" type="button" id="button-addon2">Buscar</button>
+                    <button className="btn btn-secondary" type="button" id="button-addon2"><SearchIcon/>Buscar</button>
                 </div>
                 <div className="mt-4">
 
