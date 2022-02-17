@@ -8,13 +8,14 @@ const MenuNavegacionCliente = () => {
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                     <li className="nav-item">
-                        <a className="nav-link" aria-current="page" href="#">Comprar/vender</a>
+                        <a className="nav-link" aria-current="page" href="../ComprarYVender">Comprar/vender</a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" aria-current="page" href="#">Historial</a>
+                        <a className="nav-link" aria-current="page" href="../historia32">Historial</a>
                     </li>
                 </ul>
             </div>
+            
         </div>
     </nav>
 }
