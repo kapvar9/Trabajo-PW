@@ -6,6 +6,8 @@ function Nosotros() {
         <div>
             <Cabecera />
         </div>
+        <a href=".." class="btn btn-success">Regresar</a>
+        
         <h1 id="titulo">Nosotros</h1>
         <NosotrosEtiqueta />
         <Footer />
