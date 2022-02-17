@@ -8,12 +8,9 @@ import EditIcon from '@mui/icons-material/Edit';
 import DeleteIcon from '@mui/icons-material/Delete';
 
 
-function ListarClientes () {
+function ResultadoCliente () {
 
     //href="../listarclientes"
-    const resultadoCliente = () =>{
-        location.href = "/mostraclienteresultado"
-    }
 
     return <div>
         <div>
@@ -24,14 +21,13 @@ function ListarClientes () {
         </div>
         <div className="mt-4 card">
             <div className="card-header bg-primary text-white">
-                <h3>Detalle de <b>clientes</b></h3>
+                <h3>Resultados de <b>búsqueda</b></h3>
             </div>
             <div className="card-body">
                 <div className="input-group mb-3 mt-4">
-                    <input type="text" className="form-control" placeholder="Ingrese el término de búsqueda"/>
+                    <input type="text" className="form-control" placeholder="Evelyn"/>
                     
-                    <button className="btn btn-secondary" type="button" id="button-addon2"
-                    onClick={resultadoCliente}><SearchIcon/>Buscar</button>
+                    <button className="btn btn-secondary" type="button" id="button-addon2"><SearchIcon/>Buscar</button>
                 </div>
                 <div className="mt-4 table-responsive">
                     <table className="table">
@@ -54,30 +50,6 @@ function ListarClientes () {
                                 <td>999999999</td>
                                 <td><a href="/editarcliente"><EditIcon/></a><DeleteIcon/></td>
                             </tr>
-                            <tr>
-                                <th scope="row">2</th>
-                                <td>Luis Gutarra</td>
-                                <td>12345678</td>
-                                <td>luis.gutarra@grupo6.com.pe</td>
-                                <td>999999999</td>
-                                <td><a href="/editarcliente"><EditIcon/></a><DeleteIcon/></td>
-                            </tr>
-                            <tr>
-                                <th scope="row">3</th>
-                                <td>Maritza Palomino</td>
-                                <td>12345678</td>
-                                <td>maritza.palomino@grupo6.com.pe</td>
-                                <td>999999999</td>
-                                <td><a href="/editarcliente"><EditIcon/></a><DeleteIcon/></td>
-                            </tr>
-                            <tr>
-                                <th scope="row">4</th>
-                                <td>Kory Ponce</td>
-                                <td>12345678</td>
-                                <td>kory.ponce@grupo6.com.pe</td>
-                                <td>999999999</td>
-                                <td><a href="/editarcliente"><EditIcon/></a><DeleteIcon/></td>
-                            </tr>
                         </tbody>
                     </table>
                 </div>
@@ -90,4 +62,4 @@ function ListarClientes () {
     </div>
 
 }
-export default ListarClientes
+export default ResultadoCliente
