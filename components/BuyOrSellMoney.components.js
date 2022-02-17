@@ -1,53 +1,62 @@
-import { useState } from "react"
-const buyOrSellMoney =(props) =>{
 
-    const  [iUno, setiUno] = useState ("")
-    const  [iUnoV, setiUnoV] = useState (0)
-    const  [iDos, setiDos] = useState ("")
-    const  [iUno, setiDosV] = useState (0)
-    const  [p, setp] = useState ("")
+import { useState } from "react"   // esto  se usa para importar el "state "
+const BuyOrSellMoney = (props) =>{
+
+    const [IUno, setIUno] = useState("")
+    const [IUnoV, setIUnoV] = useState(0)
+    const [IDos, setIDos] = useState("")
+    const [IDosV, setIDosV] = useState(0)
+    const [p, setp] = useState("")
     const [showS, setshowS] = useState("none")
-    const [mostrarBgCompra, setmostrarBgCompra] = useState("#dedede")
-    const [mostrarBgVenta, setmostrarBgVenta] = useState("#fff")
+    const [MostrarBgCompra, setMostrarBgCompra] = useState("#dedede")
+    const [MostrarBgVenta, setMostrarBgVenta] = useState("#fff")
 
-    const iDosVOnChange = (event) => {
-        const iDosVOnChangeDT = event.target.value
-        setIDosV(iDosVOnChangeDT)
+
+    const IDosVOnChange = (event) => {
+        const IDosVOnChangeDT = event.target.value
+        setIDosV(IDosVOnChangeDT)
     }
-    const iUnoVOnChange = (event) => {
-        const iUnoVOnChangeDT = event.target.value
-        setIDosV(iUnoVOnChangeDT)
+
+    const IUnoVOnChange = (event) => {
+        const IUnoVOnChangeDT = event.target.value
+        setIUnoV(IUnoVOnChangeDT)
     }
-    //Se ejecuta la funcion que paso por el props (onLogin)
-    const ejectComprar =() => {
+
+    const EJectComprar = () => {
         setshowS("inline-flex")
-        setiUno ("Soles")
-        setiDos("Bitcoins")
-        setmostrarBgCompra("#dedede")
-        setmostrarBgVenta("#fff")
-
+        setIUno("Soles")
+        setIDos("Bitcoins")
+        setMostrarBgCompra("#dedede")
+        setMostrarBgVenta("#fff")
+        setp("Comprarás")
+        // Se va a ejecutar la funcion que se paso por el props (onLogin)
+        
+      
     }
-
-    //Se ejecuta la funcion venta que paso por el props (onLogin)
-
-    const ejectVenta =() => {
+    const EJectVenta = () => {
         setshowS("inline-flex")
-        setiUno ("Bitcoins")
-        setiDos("Soles")
-        setmostrarBgCompra("#dedede")
-        setmostrarBgVenta("#fff")
-
+        setIUno("Bitcoins")
+        setIDos("Soles")
+        setMostrarBgCompra("#fff")
+        setMostrarBgVenta("#dedede")
+        setp("Venderás")
+        // Se va a ejecutar la funcion que se paso por el props (onLogin)
+        
+      
     }
-    const ejectCalculo =() => {
+
+    const EJectCalculo = () => {
         console.log("Funciona")
-        setiUno ("Bitcoins")
-        console.log(iUnoV)
-        //Jalar tipo de cmbio con fetch y reemplazar en una variable con 5
-        var calc = iUnoV * 5
-        setiDosV(calc)
-        console.log(iDosV)
-
+        console.log(IUnoV)
+        //Jalar tipo de cambio con fetch y reemplazar en una variable con 5
+        var calc = IUnoV * 5
+        setIDosV(calc)
+        console.log(IDosV)
+        // Se va a ejecutar la funcion que se paso por el props (onLogin)
+        
+      
     }
+
 
     return <aside>
         <div className="card" >

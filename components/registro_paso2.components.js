@@ -1,7 +1,8 @@
 const RegistroP2 = () => {
     return <div>
-        <h2>Registrar Paso 2</h2>
-        <div className="container mt-8">
+        <h2 id="tituloRegistrar2">Registrar Paso 2</h2>
+        <div id="registrar2">
+        <div  className="container mt-8">
         
         <form>
             <div className="form-group">
@@ -13,15 +14,16 @@ const RegistroP2 = () => {
                 <input type="password" className="form-control" id="exampleInputPassword1" placeholder="Contraseña" />
             </div>
             <div className="form-group">
-                <label for="exampleInputPassword1">Password</label>
+                <label for="exampleInputPassword1">Repetir Password</label>
                 <input type="password" className="form-control" id="exampleInputPassword2" placeholder="Repetir contraseña" />
             </div>
             <div className="boton md-8">
             <a href="../registrarClienteP1" class="btn btn-success">Regresar</a>
-            <a href="../registrarClienteP2" class="btn btn-success">Siguiente</a>
+            <a href="../esperaCliente" class="btn btn-success">Siguiente</a>
             </div>
         </form>
         
+        </div>
         </div>
     </div>
 }

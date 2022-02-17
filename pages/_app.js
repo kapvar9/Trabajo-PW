@@ -1,7 +1,12 @@
 import Head from 'next/head'
 import Script from 'next/script'
 import '../styles/globals.css'
+<<<<<<< HEAD
 import "../styles/index.css"
+=======
+import "../styles/mainCliente.css"
+import '../css/index.css'
+>>>>>>> ae0c6112f6fd4f2a0a458fbd539ef4b448cbdc9f
 
 function MyApp({ Component, pageProps }) {
   return <>
