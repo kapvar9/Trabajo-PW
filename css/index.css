@@ -25,7 +25,9 @@
 #foto{
     height: 100px;
 }
-
+#titulo{
+    text-align: center;
+}
 #cont_delegar{
     position: relative;
     width:100%;
