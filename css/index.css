@@ -56,3 +56,13 @@
     margin: auto;
     display: block;
 }
+.tituloEspera{
+    text-align: center;
+    margin-top: 20px;
+}
+#imagenEspera{
+    width: 400px;
+    height: 300px;
+    margin: auto;
+    display: block;
+}
