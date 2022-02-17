@@ -1,6 +1,6 @@
 import Footer from "../components/footer.components"
 import BuyOrSellMoney from "../components/BuyOrSellMoney.components"
-
+import MenuNavegacionCliente from "../components/menu_navegacion_cliente.components"
 
 
 
@@ -22,10 +22,12 @@ export default function Home() {
             <img src="https://www.pngmart.com/files/15/Gold-Bitcoin-Transparent-PNG.png" className="me-3" width="46" height="38" alt="Bootstrap"/>
             <h1>Crypto-nita</h1>  
         </div>
-              
+        
         
        </header>
+       
     </div>
+    <MenuNavegacionCliente />
     <div className="mt-4">
         
   
