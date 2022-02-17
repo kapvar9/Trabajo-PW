@@ -1,7 +1,7 @@
 
 import Cabecera from "../components/header.components"
 import MenuNavegacionAdmin from "../components/menu_navegacion_admin.components"
-import { Image } from "react-bootstrap"
+
 import Footer from "../components/footer.components"
 import SearchIcon from '@mui/icons-material/Search';
 import EditIcon from '@mui/icons-material/Edit';
@@ -29,7 +29,7 @@ function ListarClientes () {
                     
                     <button className="btn btn-secondary" type="button" id="button-addon2"><SearchIcon/>Buscar</button>
                 </div>
-                <div className="mt-4">
+                <div className="mt-4 table-responsive">
                     <table className="table">
                         <thead>
                             <tr>
