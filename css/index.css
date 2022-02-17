@@ -19,7 +19,7 @@
     height:300px;
     
 }
-#titulo{
+.titulo{
     text-align: center;
 }
 #foto{
@@ -53,6 +53,12 @@
 #imagenT{
     width: 300px;
     height: 300px;
+    margin: auto;
+    display: block;
+}
+#imagenA{
+    width: 200px;
+    height: 200px;
     margin: auto;
     display: block;
 }
@@ -99,4 +105,8 @@
    line-height: 50px;
     margin-right: 100px;
     margin-left: 100px;
+}
+
+#cardN{
+    text-align: center;
 }
