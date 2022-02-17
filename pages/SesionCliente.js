@@ -21,10 +21,9 @@ function IniciarSesion(){
             </header>
             <MenuNavegacionCliente/>
         </div>
-        <h1 id="titulo">Iniciar Sesion</h1>
-        <div id="formulario">
-        <FormularioLogin onLogin = {loginHandler}/>
-        </div>
+        <div className="contenerdorlogin">
+      <FormularioLogin onLogin = {loginHandler}/>
+      </div>
     </div>
     <Footer />
     </div>
