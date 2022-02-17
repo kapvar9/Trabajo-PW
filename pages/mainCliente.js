@@ -1,6 +1,7 @@
 import Bannercliente from "../components/bannerCliente.components"
 import Cabecera from "../components/header.components"
 import MenuNavegacionCliente from "../components/menu_navegacion_cliente.components"
+import Footer from "../components/footer.components"
 import { useEffect, useState } from "react"
 
 
@@ -35,6 +36,7 @@ function MainUsuario() {
                 
             </div>        
         </div>
+        <Footer />
         
         
     </div>
