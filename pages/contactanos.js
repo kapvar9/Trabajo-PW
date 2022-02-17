@@ -1,9 +1,9 @@
 import Footer from "../components/footer.components"
-import Cabecera from "../components/header.components"
+import Cabecera1 from "../components/header2.components"
 function Contactanos() {
     return <div>
         <header>
-                <Cabecera/>  
+                <Cabecera1/>  
         </header>
         <h1 id="tituloC">Contáctanos</h1>
         <h3>Nos puedes contactar a través de estos medios:</h3>
