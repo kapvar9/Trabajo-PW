@@ -11,6 +11,9 @@ import DeleteIcon from '@mui/icons-material/Delete';
 function ResultadoCliente () {
 
     //href="../listarclientes"
+    const regresarCliente = () =>{
+        location.href = "/listarclientes"
+      }
 
     return <div>
         <div>
@@ -54,7 +57,10 @@ function ResultadoCliente () {
                     </table>
                 </div>
             </div>
-            
+            <div className="text-center mb-2">
+                <button onClick={regresarCliente} className="but1 btn btn-danger" type="button">Regresar</button>
+                                
+            </div>  
 
         </div>
        
