@@ -1,8 +1,8 @@
 const RegistroP1 = () => {
     
         return <div>
-            <h2>Registrar: Paso 1</h2>
-            <div>
+            <h2 id="TituloRegistrar">Registrar: Paso 1</h2>
+            <div id="contenedorRegistro">
             <form>
                 <div class="form-group">
                     <label for="NombreUsuario">Nombre</label>
