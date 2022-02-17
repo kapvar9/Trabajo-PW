@@ -2,7 +2,7 @@ const ListaOperaciones = (props) => {
     return <main className="col-md-10">
         <h1>Lista de operaciones</h1>
         <table className="table">
-            <thead class="table-dark">
+            <thead className="table-dark">
                 <tr>
                     <th>Id</th>
                     <th>Fecha y hora</th>

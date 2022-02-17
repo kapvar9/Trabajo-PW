@@ -18,8 +18,8 @@ const RegistroP2 = () => {
                 <input type="password" className="form-control" id="exampleInputPassword2" placeholder="Repetir contraseña" />
             </div>
             <div className="boton md-8">
-            <a href="../registrarClienteP1" class="btn btn-success">Regresar</a>
-            <a href="../esperaCliente" class="btn btn-success">Siguiente</a>
+            <a href="../registrarClienteP1" className="btn btn-success">Regresar</a>
+            <a href="../esperaCliente" className="btn btn-success">Siguiente</a>
             </div>
         </form>
         

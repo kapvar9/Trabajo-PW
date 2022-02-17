@@ -7,7 +7,7 @@ function TerminosYCondiciones() {
                 <Cabecera/>  
         </header>
         <div id="boton1">
-        <a href=".." class="btn btn-success">Regresar</a>
+        <a href=".." className="btn btn-success">Regresar</a>
         </div>
         <h1 id="term">Estos son los terminos y condiciones</h1>
    
