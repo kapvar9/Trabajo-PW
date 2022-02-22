@@ -5,6 +5,7 @@ import "../styles/index.css"
 import "../css/index.css"
 
 
+
 function MyApp({ Component, pageProps }) {
   return <>
   <Head>
@@ -17,6 +18,7 @@ function MyApp({ Component, pageProps }) {
     <Component {...pageProps} />
   </div>
   </>
+
 }
 
 export default MyApp

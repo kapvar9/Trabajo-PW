@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Anton');
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Changa+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chela+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
 
 .online_icon{
     height: 15px;
@@ -15,3 +20,26 @@
     margin: 25px;
     align-items: center;
 }*/
+
+.tituloindex{
+    font-family: 'Changa One', cursive;
+    color: #2454da;
+    size: 108px;
+    
+}
+.bannertitulo{
+    font-family: 'Chela One', cursive;
+    color:white
+}
+.banner{
+    opacity: 0.85;
+}
+.textoindex{
+    font-family: 'Jost', sans-serif;
+    color:black
+}
+
+.noticias{
+    background-color: gray;
+    color:white
+}
