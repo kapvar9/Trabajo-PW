@@ -15,7 +15,7 @@ const NumeroCuenta = () => {
                         </div>
                         <div className="col-md-15">
 
-                            <a href="../historia30b">Siguiente </a>
+                            <a href="../historia30a">Siguiente </a>
                         </div>
                     </form>
                 </div>
