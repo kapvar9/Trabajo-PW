@@ -6,6 +6,7 @@ import { Image } from "react-bootstrap"
 import { useEffect } from "react"
 import { useState } from "react"
 import NewspaperIcon from '@mui/icons-material/Newspaper';
+import LoginAdminBoton from "../components/loginadmin_boton.components"
 
 
 
@@ -16,10 +17,14 @@ export default function Home() {
     //funcion que permita loggearse
     const loginHandler = (username,password) =>{
       if (username == "admin" && password == "123") {
-        location.href = "../mainAdmin"
+        location.href = "../listarclientes"
       }else {
-        location.href = "../mainCliente"
+        location.href = "../ComprarYVender"
       }
+    }
+
+    const loginHandlerAdmin = () => {
+      location.href = "../loginadmin"
     }
     
     const registroHandler = () =>{
@@ -44,7 +49,7 @@ export default function Home() {
             <h1>Crypto-nita</h1> 
         </div>
         <div className="ms-auto">
-             <RegistroBoton onRegistro = {registroHandler}/>    
+             <LoginAdminBoton onLoginAdmin = {loginHandlerAdmin}/>    
         </div>           
         
        </header>

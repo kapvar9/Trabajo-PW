@@ -1,6 +1,6 @@
 
 import Cabecera from "../components/header.components"
-import MenuNavegacionAdmin from "../components/menu_navegacion_admin.components"
+import MenuNavegacionCliente from "../components/menu_navegacion_cliente.components"
 
 import Footer from "../components/footer.components"
 import SearchIcon from '@mui/icons-material/Search';
@@ -20,7 +20,7 @@ function HistorialCliente () {
             <header>
             <Cabecera/>  
             </header>
-            <MenuNavegacionAdmin/>
+            <MenuNavegacionCliente/>
         </div>
         <div className="mt-4 card">
             <div className="card-header bg-primary text-white">

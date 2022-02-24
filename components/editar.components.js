@@ -1,6 +1,6 @@
 const Editar = () => {
 
-    return <aside class="col-md-8">
+    return <aside className="col-md-8">
         <h1>Editar operación</h1>        
         <div className="mt-4 card">
             <div className="card-body"> 

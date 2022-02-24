@@ -43,3 +43,11 @@
     background-color: gray;
     color:white
 }
+.navadmin a:hover{
+    background-color: #ddd;
+    color: black;
+}
+
+.loginAdmin{
+    background-color: #ddd;
+}

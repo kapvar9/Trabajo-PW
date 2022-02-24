@@ -1,52 +1,45 @@
 import { useState } from "react"
 
-const FormularioLogin = (props) =>{
+const FormularioLoginAdmin = (props) =>{
 
-     // Variables internas (variables de estado) del componente
-     const [txtUsername, setTxtUsername] = useState("")
-     const [txtPassword, setTxtPassword] = useState("")
+     // Se crea las variables internas que almacenaran valores de admin
+     const [txtUsernameAdmin, setTxtUsernameAdmin] = useState("")
+     const [txtPasswordAdmin, setTxtPasswordAdmin] = useState("")
     
      //Se obtiene el valor del  usuario y se modifica el estado
-     const txtUsernameOnChange = (event) => {
-         const txtUsernameIngresado = event.target.value
-         setTxtUsername(txtUsernameIngresado)
+     const txtUsernameAdminOnChange = (event) => {
+         const txtUsernameAdminIngresado = event.target.value
+         setTxtUsernameAdmin(txtUsernameAdminIngresado)
      }
      
       //Se obtiene el valor del  password y se modifica el estado
-     const txtPasswordOnChange = (event) => {
-         setTxtPassword(event.target.value)
+     const txtPasswordAdminOnChange = (event) => {
+         setTxtPasswordAdmin(event.target.value)
      }
  
-     const butLoginOnClick = () => {
+     const butLoginOnAdminClick = () => {
          //Se llama a la funcion del props
          props.onLogin(txtUsername, txtPassword)
      }
-
-     const loginHandlerAdmin = (username,password) =>{
-        if (username == "admin" && password == "123") {
-          location.href = "../listarclientes"
-        }
-     }
  
-
     return <aside>
         <div className="card">
             <div className="card-body">
-                <h3>Iniciar sesión</h3>
+                <h3 className="text-center">Iniciar sesión</h3>
                 <form>
                     <div>
                         <label htmlFor="txt_username" className="form-label">Username</label>
                         <input id="txt_username" type="text" className="form-control"
-                        defaultValue={ txtUsername } onChange={ txtUsernameOnChange } />
+                        defaultValue={ txtUsernameAdmin } onChange={ txtUsernameAdminOnChange } />
                     </div>
                     <div className="mb-2">
                         <label htmlFor="txt_password" className="form-label">Password</label>
                         <input id="txt_password" type="password" className="form-control"
-                        defaultValue={ txtPassword } onChange={ txtPasswordOnChange }/>
+                        defaultValue={ txtPasswordAdmin } onChange={ txtPasswordAdminOnChange }/>
                     </div>
                     <div className="text-center">
-                        <button id="butLogin"  className="btn btn-primary" type="button"
-                        onClick={butLoginOnClick}>Login</button>
+                        <button id="butLogin"  className="btn btn-success" type="button"
+                        onClick={ butLoginOnAdminClick}>Login</button>
                     </div>
                     
                 </form>
@@ -55,4 +48,4 @@ const FormularioLogin = (props) =>{
         </div>
     </aside>
 }
-export default FormularioLogin
+export default FormularioLoginAdmin
