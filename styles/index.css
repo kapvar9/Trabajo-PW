@@ -23,7 +23,7 @@
 
 .tituloindex{
     font-family: 'Changa One', cursive;
-    color: #2454da;
+    color: #044e97;
     size: 108px;
     
 }
@@ -50,4 +50,13 @@
 
 .loginAdmin{
     background-color: #ddd;
+}
+.ventajastitulo{
+    font-family: 'Changa One', cursive;
+    color:#044e97
+}
+
+.ventajassubtitulo{
+    color:#0f335b;
+    font-family: 'Jost', sans-serif;
 }
