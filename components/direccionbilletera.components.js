@@ -1,4 +1,4 @@
-const NumeroCuenta = () => {
+const DireccionBilletera = () => {
 
     return <aside class="col-md-8">
         <div class="card ">
@@ -7,7 +7,7 @@ const NumeroCuenta = () => {
                     <form className="form-label-group">
                         <div className="row mb-3">
                             <div className="col-md-7">
-                                <label for="txt_username" class="form label">Número de transacción</label>
+                                <label for="txt_username" class="form label">Ingresa tu dirección de billetera</label>
                             </div>
                             <div className="col-md-1">
                                 <input type="text" id="disabledTextInput" />
@@ -15,7 +15,7 @@ const NumeroCuenta = () => {
                         </div>
                         <div className="col-md-15">
 
-                            <a href="../historia30a">Siguiente </a>
+                            <a href="../historia31a">Siguiente </a>
                         </div>
                     </form>
                 </div>
@@ -33,4 +33,4 @@ const NumeroCuenta = () => {
         </p>
     </aside>
 }
-export default NumeroCuenta 
+export default DireccionBilletera

@@ -1,21 +1,10 @@
 import Footer from "../components/footer.components"
-import MenuNavegacionAdmin from "../components/menu_navegacion_admin.components"
+import MenuNavegacionCliente from "../components/menu_navegacion_cliente.components"
 import CerrarSesionBoton from "../components/cerrarsesion_boton.components"
-import ListaOperaciones from "../components/lista_operaciones.components"
+import EstamosVal from "../components/estamos_val.components"
 import { Image } from "react-bootstrap"
 
-function Historia32() {
-    const listadooperaciones = [
-        {id : "1223", fechahora: "25/02/22 02:25:30", cliente : "Giacomo Guilizzoni", 
-        tipo : "Comprar", cambio : 4.50, monto : 5200},
-        {id : "", fechahora: "", cliente : "", tipo : "", cambio : "", monto : "" },
-        {id : "", fechahora: "", cliente : "", tipo : "", cambio : "", monto : "" },
-        {id : "", fechahora: "", cliente : "", tipo : "", cambio : "", monto : "" },
-        {id : "", fechahora: "", cliente : "", tipo : "", cambio : "", monto : "" },
-        {id : "", fechahora: "", cliente : "", tipo : "", cambio : "", monto : "" },
-        {id : "", fechahora: "", cliente : "", tipo : "", cambio : "", monto : "" },
-        {id : "", fechahora: "", cliente : "", tipo : "", cambio : "", monto : "" },
-      ]
+function Historia31b() {
     const CerrarHandler = () => {
         location.href = "/"
     }
@@ -35,13 +24,18 @@ function Historia32() {
             </header>
         </div>
         <div>
-            <MenuNavegacionAdmin />
+            <MenuNavegacionCliente />
         </div>
-        
+        <div>
+            <span id="texto 1" class="ejemplo1">
+                <font face="Cascadia Code" color="black" size="40">Operación de compra ## </font>
+                <div><font face="Cascadia Code" color="black" size="40">Paso 3 de 3</font></div>
+            </span>
+        </div>
         <div className="mt-4">
             <div className="row mt-100 w-100">
                 <div>
-                <ListaOperaciones operaciones={listadooperaciones}/>
+                    <EstamosVal />
                 </div>
             </div>
             <Footer />
@@ -49,4 +43,4 @@ function Historia32() {
     </div>
 }
 
-export default Historia32
+export default Historia31b

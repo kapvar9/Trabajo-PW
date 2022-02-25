@@ -4,7 +4,8 @@ const BuyOrSellMoney = (props) =>{
 
     const [IUno, setIUno] = useState("")
     const [IUnoV, setIUnoV] = useState(0)
-    const [IDos, setIDos] = useState("")
+
+    const [tc, settc] = useState("")
     const [IDosV, setIDosV] = useState(0)
     const [p, setp] = useState("")
     const [showS, setshowS] = useState("none")
@@ -17,9 +18,14 @@ const BuyOrSellMoney = (props) =>{
         setIDosV(IDosVOnChangeDT)
     }
 
+    const tcOnChange = (event) => {
+        const tcOnChangeeDT = event.target.value
+        settc(tcOnChangeDT)
+    }
+
     const IUnoVOnChange = (event) => {
         const IUnoVOnChangeDT = event.target.value
-        setIUnoV(IUnoVOnChangeDT)
+        setIDosV(UnoVOnChangeDT)
     }
 
     const EJectComprar = () => {
@@ -33,6 +39,7 @@ const BuyOrSellMoney = (props) =>{
         
       
     }
+
     const EJectVenta = () => {
         setshowS("inline-flex")
         setIUno("Bitcoins")
@@ -46,15 +53,12 @@ const BuyOrSellMoney = (props) =>{
     }
 
     const EJectCalculo = () => {
-        console.log("Funciona")
+        console.log("funciona")
         console.log(IUnoV)
-        //Jalar tipo de cambio con fetch y reemplazar en una variable con 5
-        var calc = IUnoV * 5
-        setIDosV(calc)
-        console.log(IDosV)
-        // Se va a ejecutar la funcion que se paso por el props (onLogin)
+        console.log(tc)
+        var cal = IUnoV*tc
+        setIDosV.log(IDosV)
         
-      
     }
 
 
