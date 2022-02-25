@@ -4,7 +4,7 @@ const BuyOrSellMoney = (props) =>{
 
     const [IUno, setIUno] = useState("")
     const [IUnoV, setIUnoV] = useState(0)
-    const [IDos, setIDos] = useState("")
+    const [tc, settc] = useState("")
     const [IDosV, setIDosV] = useState(0)
     const [p, setp] = useState("")
     const [showS, setshowS] = useState("none")
@@ -17,9 +17,14 @@ const BuyOrSellMoney = (props) =>{
         setIDosV(IDosVOnChangeDT)
     }
 
+    const tcOnChange = (event) => {
+        const tcOnChangeeDT = event.target.value
+        setIUnoV(tcOnChangeDT)
+    }
+
     const IUnoVOnChange = (event) => {
         const IUnoVOnChangeDT = event.target.value
-        setIUnoV(IUnoVOnChangeDT)
+        setIDosV(UnoVOnChangeDT)
     }
 
     const EJectComprar = () => {
