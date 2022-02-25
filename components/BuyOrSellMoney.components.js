@@ -20,7 +20,7 @@ const BuyOrSellMoney = (props) =>{
 
     const tcOnChange = (event) => {
         const tcOnChangeeDT = event.target.value
-        setIUnoV(tcOnChangeDT)
+        settc(tcOnChangeDT)
     }
 
     const IUnoVOnChange = (event) => {
