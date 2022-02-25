@@ -17,7 +17,7 @@ const nbilletera = () => {
                         </div>
                         <div className="col-md-15">
 
-                            <a href="../historia30b">Siguiente </a>
+                            <a href="../historia30b">  Confirmar  </a>
                         </div>
                     </form>
                 </div>
