@@ -5,7 +5,7 @@ const BuyOrSellMoney = (props) =>{
     const [IUno, setIUno] = useState("")
     const [IUnoV, setIUnoV] = useState(0)
 
-    const [tc, settc] = useState(0)
+    const [tc, settc] = useState("")
     const [IDosV, setIDosV] = useState(0)
     const [p, setp] = useState("")
     const [showS, setshowS] = useState("none")
