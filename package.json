@@ -15,7 +15,9 @@
     "@mui/icons-material": "^5.4.2",
     "@mui/material": "^5.4.2",
     "@mui/styled-engine-sc": "^5.4.2",
+    "hstore": "^0.0.1",
     "next": "12.0.10",
+    "pg": "^8.7.3",
     "react": "17.0.2",
     "react-bootstrap": "^2.1.2",
     "react-dom": "17.0.2",
@@ -23,7 +25,10 @@
     "webfontloader": "^1.6.28"
   },
   "devDependencies": {
+    "cli": "^1.0.1",
     "eslint": "8.9.0",
-    "eslint-config-next": "12.0.10"
+    "eslint-config-next": "12.0.10",
+    "sequelize": "^6.17.0",
+    "sequelize-cli": "^6.4.1"
   }
 }
