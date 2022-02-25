@@ -38,6 +38,7 @@ const BuyOrSellMoney = (props) =>{
         
       
     }
+
     const EJectVenta = () => {
         setshowS("inline-flex")
         setIUno("Bitcoins")
@@ -51,15 +52,12 @@ const BuyOrSellMoney = (props) =>{
     }
 
     const EJectCalculo = () => {
-        console.log("Funciona")
+        console.log("funciona")
         console.log(IUnoV)
-        //Jalar tipo de cambio con fetch y reemplazar en una variable con 5
-        var calc = IUnoV * 5
-        setIDosV(calc)
-        console.log(IDosV)
-        // Se va a ejecutar la funcion que se paso por el props (onLogin)
+        console.log(tc)
+        var cal = IUnoV*tc
+        setIDosV.log(IDosV)
         
-      
     }
 
 
