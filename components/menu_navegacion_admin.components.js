@@ -10,9 +10,11 @@ const MenuNavegacionAdmin = () => {
                     <li className="nav-item">
                         <a className="nav-link active" aria-current="page" href="../listarclientes">Clientes</a>
                     </li>
+
                     <li className="nav-item">
-                        <a className="nav-link" aria-current="page" href="#">Tipo de cambio</a>
+                        <a className="nav-link active" aria-current="page" href="../EditarTipoCambio">TipodeCambio</a>
                     </li>
+                    
                     <li className="nav-item">
                         <a className="nav-link" aria-current="page" href="#">Operaciones</a>
                     </li>
