@@ -1,5 +1,5 @@
 import Footer from "../components/footer.components"
-import MenuNavegacionAdmin from "../components/menu_navegacion_cliente.components"
+import MenuNavegacionAdmin from "../components/menu_navegacion_admin.components"
 import CerrarSesionBoton from "../components/cerrarsesion_boton.components"
 import ListaOperaciones from "../components/lista_operaciones.components"
 import { Image } from "react-bootstrap"
