@@ -33,7 +33,7 @@ const RegistroP2 = () => {
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="../esperaCliente" className="btn btn-success">Siguiente</a>
+            <a href="../esperaCliente" className="btn btn-success">Confirmar</a>
             </div>
         </form>
         
