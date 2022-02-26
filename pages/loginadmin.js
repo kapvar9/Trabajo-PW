@@ -5,6 +5,12 @@ import FormularioLoginAdmin from "../components/formulario_admin_login.component
 
 
 function LoginAdmin() {
+
+    const loginHandlerAdmin = () => {
+        location.href = "../listarclientes"
+      }
+    
+      
     return <div className="loginAdmin">
         <div>
             <header>
@@ -18,7 +24,7 @@ function LoginAdmin() {
             <div className="row">
                 <div className="col-md-4"></div>
                 <div className=" justify-content-center mt-4 col-md-4">
-                    <FormularioLoginAdmin/>
+                    <FormularioLoginAdmin onLogin={loginHandlerAdmin}/>
                 </div>
             </div>
         </div>
