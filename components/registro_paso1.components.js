@@ -16,7 +16,7 @@ const RegistroP1 = () => {
         }    
 
 
-
+        
         return <div>
             <h2 id="TituloRegistrar">Registrar: Paso 1</h2>
             <div id="contenedorRegistro">
