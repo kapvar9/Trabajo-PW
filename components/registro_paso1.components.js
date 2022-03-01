@@ -1,4 +1,6 @@
-const RegistroP1 = () => {
+import { useState } from "react"
+
+const RegistroP1 = (props) => {
         //Se crea variables de estado para el componente
         const [txtNombreCliente, setTxtNombreCliente] = useState("")
         const [txtApellidosCliente, setTxtApellidosCliente] = useState("")
@@ -15,8 +17,25 @@ const RegistroP1 = () => {
             setTxtDniCliente(event.target.value)
         }    
 
+        //Guardar proyecto en local storage
+        /*const guardarProyectoLS = (txtNombreCliente, txtApellidosCliente,txtDniCliente) =>{
+            const cliente = {
+                nombre:nombreCliente,
+                apellidos: apellidoCliente,
+                dni: DNICliente
+            }
+            //Se guardar cliente en local storage
+            localStorage.setItem("clientes",JSON.stringify(clientes))
+        }*/
 
-        
+        const butGuardarClick = () => {
+            console.log(`Nombre: ${txtNombreCliente}`)
+            console.log(`Apellidos: ${txtApellidosCliente}`)
+            //se va a ejecutar la funcion que se paso por el props (onLogin)
+            props.onGuardar(txtNombreCliente, txtApellidosCliente,txtDniCliente)
+         }
+
+
         return <div>
             <h2 id="TituloRegistrar">Registrar: Paso 1</h2>
             <div id="contenedorRegistro">
@@ -24,19 +43,19 @@ const RegistroP1 = () => {
                 <div className="form-group">
                     <label htmlFor="NombreUsuario">Nombre</label>
                     <input type="name" className="form-control" id="NombreUsuario" aria-describedby="emailHelp" placeholder="Nombre" 
-                    defaultvalue={txtNombreCliente} onChange={txtNombreClienteChange}/>                 
+                    defaultValue={txtNombreCliente} onChange={txtNombreClienteChange}/>                 
                 </div>
     
                 <div className="form-group">
                     <label htmlFor="ApellidoUsuario">Apellido</label>
                     <input type="name" className="form-control" id="ApellidoUsuario" aria-describedby="emailHelp" placeholder="Apellido" 
-                    defaultvalue={txtApellidosCliente} onChange={txtApellidosClienteChange}/>            
+                    defaultValue={txtApellidosCliente} onChange={txtApellidosClienteChange}/>            
                 </div>
     
                 <div className="form-group">
                     <label htmlFor="DNIUsuario">DNI</label>
                     <input type="name" className="form-control" id="DNIUsuario" aria-describedby="emailHelp" placeholder="DNI" 
-                    defaultvalue={txtDniCliente} onChange={txtDniClienteChange}
+                    defaultValue={txtDniCliente} onChange={txtDniClienteChange}
                     />                 
                 </div>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -50,8 +69,9 @@ const RegistroP1 = () => {
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            
-                <a href="../registrarClienteP2" className="btn btn-success">Siguiente</a>
+
+                <button type="button" onClick={ butGuardarClick }>Guardar</button>
+                {/*<a href="../registrarClienteP2" className="btn btn-success">Siguiente</a>*/}
                 
             </form>
             </div>
