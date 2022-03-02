@@ -32,7 +32,7 @@ const RegistroP2 = (props) => {
         <form>
             <div className="form-group">
                 <label htmlFor="exampleInputEmail1">Celular</label>
-                <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingresa el numero de celular" 
+                <input type="tel" className="form-control" id="exampleInputTel1" aria-describedby="telHelp" placeholder="Ingresa el numero de celular" 
                 defaultValue={txtCelularCliente} onChange={txtCelularClienteChange}/>
             </div>
             <div className="form-group">
