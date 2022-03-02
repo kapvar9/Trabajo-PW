@@ -5,9 +5,9 @@ import Footer from "../components/footer.components"
 
 
 function registrarClienteP2() {
-    
 
-    const guardarProyectoHandler = async (txtCelularCliente, txtCorreoCliente,txtPasswordCliente) =>{
+
+    const guardarClienteHandler = async (txtCelularCliente, txtCorreoCliente,txtPasswordCliente) =>{
 
         //Obtener datos del local storage 
         const clientesSTR = localStorage.getItem("clientes")
@@ -21,7 +21,7 @@ function registrarClienteP2() {
             dni: clienteparcial.dni,
             celular:txtCelularCliente,
             correo: txtCorreoCliente,
-            contraseña: txtPasswordCliente
+            contrasena: txtPasswordCliente
         }
 
         const resp = await fetch("/api/clientes", {
@@ -36,14 +36,12 @@ function registrarClienteP2() {
         location.href = "/registrarClienteP2"*/
 
     }
-
-
     return <div>
         <header>
                 <Cabecera1/>  
             </header>
     
-        <RegistroP2 onGuardarCliente ={guardarProyectoHandler}/>
+        <RegistroP2 onGuardarCliente ={guardarClienteHandler}/>
         <Footer />
         </div>
   }
