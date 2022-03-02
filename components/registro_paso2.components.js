@@ -65,3 +65,4 @@ const RegistroP2 = (props) => {
         </div>
     </div>
 }
+export default RegistroP2
