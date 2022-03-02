@@ -4,7 +4,7 @@ const RegistroP1 = (props) => {
         //Se crea variables de estado para el componente
         const [txtNombreCliente, setTxtNombreCliente] = useState("")
         const [txtApellidosCliente, setTxtApellidosCliente] = useState("")
-        const [txtDniCliente, setTxtDniCliente] = useState("")
+        const [txtDniCliente, setTxtDniCliente] = useState(0)
 
         const txtNombreClienteChange =  (event) =>{
             setTxtNombreCliente(event.target.value)
@@ -65,12 +65,8 @@ const RegistroP1 = (props) => {
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
-                <button type="button" onClick={ butGuardarClick }>Guardar</button>
+            
+                <button className="btn btn-success" type="button" onClick={ butGuardarClick }>Siguiente</button>
                 {/*<a href="../registrarClienteP2" className="btn btn-success">Siguiente</a>*/}
                 
             </form>
