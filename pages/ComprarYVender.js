@@ -3,7 +3,6 @@ import BuyOrSellMoney from "../components/BuyOrSellMoney.components"
 import MenuNavegacionCliente from "../components/menu_navegacion_cliente.components"
 
 
-
 export default function Home() {
 
     //funcion que permita loggearse
