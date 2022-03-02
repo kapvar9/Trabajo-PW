@@ -5,15 +5,31 @@ import Footer from "../components/footer.components"
 
 function registrarClienteP2() {
 
-    const guardarProyectoLS2 = (txtCelularCliente, txtCorreoCliente,txtPasswordCliente) =>{
+    
+
+    const cliente = require('./registrarClienteP1');
+    const Nombre = cliente.nombre
+    const Apellidos = cliente.apellidos
+    const Dni = cliente.dni
+
+    const guardarProyectoLS2 = (nombre,apellidos,dni,txtCelularCliente, txtCorreoCliente,txtPasswordCliente) =>{
         const cliente2 = {
+            //const an = localStorage.getItem("clientes"),
+            nombre1 :nombre,
+            apellido1 :apellidos,
+            dni1:dni,
             celular:txtCelularCliente,
             correo: txtCorreoCliente,
             password: txtPasswordCliente
         }
         //Se guardar cliente en local storage
-        localStorage.setItem("clientes2",JSON.stringify(cliente2))
+        //localStorage.setItem("clientes2",JSON.stringify(cliente2))
+        const mycliente2 = JSON.stringify(cliente2);
+        console.log(JSON.parse(mycliente2))
     }
+
+    const data = new FormData();
+    data.append()
 
 
     return <div>

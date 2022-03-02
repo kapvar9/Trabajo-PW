@@ -1,4 +1,5 @@
 import { useState } from "react";
+import ErrorFormulario from "./error_form.components";
 
 const RegistroP2 = (props) => {
     
@@ -6,6 +7,7 @@ const RegistroP2 = (props) => {
     const [txtCelularCliente, setTxtCelularCliente] = useState("")
     const [txtCorreoCliente, setTxtCorreoCliente] = useState("")
     const [txtPasswordCliente, setTxtPasswordCliente] = useState("")
+    const [txtPasswordCliente2, setTxtPasswordCliente2] = useState("")
 
     const txtCelularClienteChange =  (event) =>{
         setTxtCelularCliente(event.target.value)
@@ -18,10 +20,25 @@ const RegistroP2 = (props) => {
         setTxtPasswordCliente(event.target.value)
     }    
 
+    const txtPasswordClienteChange2 =  (event) =>{
+        setTxtPasswordCliente2(event.target.value)
+    }    
+
     const butGuardarClick = () => {
         //se va a ejecutar la funcion que se paso por el props (onLogin)
-        props.onGuardar(txtCelularCliente, txtCorreoCliente,txtPasswordCliente)
+        
+            if (txtPasswordCliente == txtPasswordCliente2) {
+                props.onGuardar(txtCelularCliente, txtCorreoCliente,txtPasswordCliente)
+                location.href = '../esperaCliente'
+            }else {
+                console.log("Error en formulario")
+               
+            }
+        
+        
      }
+
+     
 
 
     return <div>
@@ -48,7 +65,8 @@ const RegistroP2 = (props) => {
             </div>
             <div className="form-group">
                 <label htmlFor="exampleInputPassword1">Repetir Password</label>
-                <input type="password" className="form-control" id="Password2" placeholder="Repetir contraseña" />
+                <input type="password" className="form-control" id="Password2" placeholder="Repetir contraseña"
+                defaultValue={txtPasswordCliente2} onChange={txtPasswordClienteChange2}/>
             </div>
             <div className="boton md-8">
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -67,7 +85,7 @@ const RegistroP2 = (props) => {
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
            
-            <a href="../esperaCliente" onClick={ butGuardarClick } className="btn btn-success">Confirmar</a>
+            <a onClick={ butGuardarClick } className="btn btn-success">Confirmar</a>
             </div>
         </form>
         
