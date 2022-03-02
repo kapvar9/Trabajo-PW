@@ -5,6 +5,15 @@ import YaCasi from "../components/ya_casi.components"
 import { Image } from "react-bootstrap"
 
 function Historia30a() {
+
+    const guardarTransaccion2 = (txtNumeroTransaccion2) =>{
+        const transaccion2 = {
+            transaccion:txtNumeroTransaccion2,            
+        }
+        
+        localStorage.setItem("transaccion2",JSON.stringify(transaccion2))
+    }
+
     const CerrarHandler = () => {
         location.href = "/"
     }
@@ -35,7 +44,7 @@ function Historia30a() {
         <div className="mt-4">
             <div className="row mt-100 w-100">
                 <div>
-                    <YaCasi />
+                    <YaCasi onGuardar ={guardarTransaccion2}/>
                 </div>
             </div>
             <Footer />
