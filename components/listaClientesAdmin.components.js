@@ -4,6 +4,10 @@ import EditIcon from '@mui/icons-material/Edit';
 import DeleteIcon from '@mui/icons-material/Delete';
 
 const ListaClientes = (props) => {
+
+  const butOnClick = () =>{
+    props.onEditarProyecto()
+  }
   return (
     <div>
       <div className="mt-4 table-responsive">
@@ -28,7 +32,8 @@ const ListaClientes = (props) => {
                       <td>{cliente.correo}</td>
                       <td>{cliente.celular}</td>
                       <td>
-                        <button type="button" className="btn btn-link">
+                        <button type="button" onClick={butOnClick}
+                        className="btn btn-link">
                           
                             Editar
                         </button>

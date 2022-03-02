@@ -6,40 +6,8 @@ const ClienteModal = (props) => {
     //Se crea una variable que va a cambiar el estado de validacion
     const [txtEstadoValidacion, setTxtEstadoValidacion] = useState(0)
   
-    
-    useEffect(() => {
-        if (props.cliente != null) {
-            setTxtEstadoValidacion(props.cliente.idusuario)
-        }
-    }, [props.cliente])
-
-    const txtEstadoValidacionOnChange = (event) => {
-        setTxtEstadoValidacion(event.target.value)
-    }
-
-
-    const listaTecnologiasOnChange = (event) => {
-        const listaIds = Array.from(event.target.selectedOptions).map((option)=>{
-            return parseInt(option.value)
-        })
-        setListaIdTecnologiasSeleccionadas(listaIds)
-    }
-
-    const butGuardarOnClick = () => {
-        if (props.modo == "edicion") {
-            props.onActualizarProyecto(idProyecto, txtNombreProyecto, txtUsuario, txtRating,listaIdTecnologiasSeleccionadas)
-        } else {
-            props.onGuardarProyecto(txtNombreProyecto, txtUsuario, txtRating,listaIdTecnologiasSeleccionadas)
-        }
-        setTxtNombreProyecto("")
-        setTxtUsuario(0)
-        setTxtRating(0)
-    }
 
     const butCloseFormOnClick = () => {
-        setTxtNombreProyecto("")
-        setTxtUsuario(0)
-        setTxtRating(0)
         props.ocultar()
     }
 
