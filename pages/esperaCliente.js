@@ -9,7 +9,7 @@ function esperaCliente() {
 
         <h1 className="tituloEspera">Por favor, espere un momento</h1>
         <h5 className="tituloEspera">Pronto se validará su cuenta</h5>
-        <img id="imagenEspera" src="https://media.tenor.com/images/779781883952778b25974baa3cf7679c/tenor.gif" />
+        <img id="imagenEspera" src="https://i.pinimg.com/564x/db/c5/7b/dbc57b7afeed83e858137b975af91b3f.jpg" />
         <Footer />
     </div>
   }

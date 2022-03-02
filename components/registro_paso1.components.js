@@ -70,8 +70,8 @@ const RegistroP1 = (props) => {
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-                <button type="button" onClick={ butGuardarClick }>Guardar</button>
-                {/*<a href="../registrarClienteP2" className="btn btn-success">Siguiente</a>*/}
+                {/*<button type="button" onClick={butGuardarClick}>Guardar</button>*/}
+                <a href="../registrarClienteP2" onClick={butGuardarClick} className="btn btn-success">Siguiente</a>
                 
             </form>
             </div>

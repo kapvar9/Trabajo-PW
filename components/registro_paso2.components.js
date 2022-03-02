@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const RegistroP2 = () => {
+const RegistroP2 = (props) => {
     
     //Se crea variables de estado para el componente
     const [txtCelularCliente, setTxtCelularCliente] = useState("")
@@ -32,22 +32,22 @@ const RegistroP2 = () => {
         
         <form>
             <div className="form-group">
-                <label for="exampleInputEmail1">Celular</label>
+                <label htmlFor="exampleInputEmail1">Celular</label>
                 <input type="text" className="form-control" id="celularUsuario" placeholder="Celular" 
                 defaultValue={txtCelularCliente} onChange={txtCelularClienteChange}/>
             </div>
             <div className="form-group">
-                <label for="exampleInputEmail1">Correo</label>
+                <label htmlFor="exampleInputEmail1">Correo</label>
                 <input type="text" className="form-control" id="correoUsuario" aria-describedby="emailHelp" placeholder="Ingrese email" 
                 defaultValue={txtCorreoCliente} onChange={txtCorreoClienteChange}/>
             </div>
             <div className="form-group">
-                <label for="exampleInputPassword1">Password</label>
+                <label htmlFor="exampleInputPassword1">Password</label>
                 <input type="password" className="form-control" id="Password1" placeholder="Contraseña" 
                 defaultValue={txtPasswordCliente} onChange={txtPasswordClienteChange}/>
             </div>
             <div className="form-group">
-                <label for="exampleInputPassword1">Repetir Password</label>
+                <label htmlFor="exampleInputPassword1">Repetir Password</label>
                 <input type="password" className="form-control" id="Password2" placeholder="Repetir contraseña" />
             </div>
             <div className="boton md-8">
