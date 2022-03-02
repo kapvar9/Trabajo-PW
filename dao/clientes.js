@@ -18,8 +18,18 @@ const guardarCliente = async(nombreCliente, apellidoCliente, DNICliente,celularC
 
 //Funcion para
 const obtenerCliente = async(id) =>{
-
+    const cliente = await db.Proyecto.findOne({
+        where : {
+            id : id
+        }
+    })
+    return cliente
 }
+//Funcion obtener lista clientes
+const obtenerListaClientes = async() =>{
+    const listadoClientes = await db.Cliente.findAll()
+    return listadoClientes
+ }
 
 //Funcion para cambiar estado de cliente
 const modificarCliente =async(cliente)=>{
@@ -27,4 +37,4 @@ const modificarCliente =async(cliente)=>{
 }
 
 //Se exportan metodos
-export {guardarCliente,obtenerCliente,modificarCliente}
+export {guardarCliente,obtenerListaClientes, obtenerCliente,modificarCliente}

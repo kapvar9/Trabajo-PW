@@ -1,5 +1,5 @@
 
-const { guardarCliente } = require("../../../dao/clientes")
+const { guardarCliente, obtenerListaClientes} = require("../../../dao/clientes")
 
 
 const clientesHandler = async(req,res) =>{
@@ -14,7 +14,15 @@ const clientesHandler = async(req,res) =>{
         res.json({
             msg: "",   
         })
-    }else{
+    
+    }else if(req.method == "GET"){
+        const clientes = await obtenerListaClientes()
+
+        res.json({
+            clientes: clientes,   
+        })
+    }
+    else{
         res.status(400).json({
             msg: "Metodo no definido"
         })
