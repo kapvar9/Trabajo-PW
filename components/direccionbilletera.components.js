@@ -46,4 +46,4 @@ const DireccionBilletera = (props) => {
         </p>
     </aside>
 }
-export default DireccionBilletera1
+export default DireccionBilletera
