@@ -1,4 +1,16 @@
-const YaCasi2 = () => {
+import { useState } from "react";
+
+const YaCasi2 = (props) => {
+
+    const [txtNumeroTransaccion3, setTxtNumeroTransaccion3] = useState("")
+
+    const txtNumeroTransaccion3Change =  (event) =>{
+        setTxtNumeroTransaccion3(event.target.value)
+    } 
+
+    const butGuardarClick = () => {        
+        props.onGuardar(txtNumeroTransaccion3)
+     }
 
     return <aside class="col-md-8">
         <div class="card ">
@@ -17,12 +29,13 @@ const YaCasi2 = () => {
                                 <label for="txt_username" class="form label">Número de transacción</label>
                             </div>
                             <div className="col-md-1">
-                                <input type="text" id="disabledTextInput" />
+                            <input type="text"  id="disabledTextInput" 
+                defaultValue={txtNumeroTransaccion3} onChange={txtNumeroTransaccion3Change}/>
                             </div>
                         </div>
                         <div className="col-md-15">
 
-                            <a href="../historia31b">Siguiente </a>
+                            <a href="../historia31b" onClick={ butGuardarClick}>Siguiente </a>
                         </div>
                     </form>
                 </div>
@@ -31,4 +44,4 @@ const YaCasi2 = () => {
         </div>
     </aside>
 }
-export default YaCasi2 
+export default YaCasi2

@@ -5,6 +5,15 @@ import NumeroCuenta from "../components/numero_cuenta.components"
 import { Image } from "react-bootstrap"
 
 function Historia28() {
+
+    const guardarTransaccion = (txtNumeroTransaccion) =>{
+        const transaccion = {
+            transaccion:txtNumeroTransaccion,            
+        }
+        
+        localStorage.setItem("transaccion",JSON.stringify(transaccion))
+    }
+
     const CerrarHandler = () => {
         location.href = "/"
     }
@@ -35,7 +44,7 @@ function Historia28() {
         <div className="mt-4">
             <div className="row mt-100 w-100">
                 <div>
-                    <NumeroCuenta />
+                    <NumeroCuenta onGuardar ={guardarTransaccion}/>
                 </div>
             </div>
             <Footer />

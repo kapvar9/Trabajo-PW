@@ -6,6 +6,7 @@ import cliente from "../sequelize/models/cliente"
 
 function registrarClienteP2() {
 
+<<<<<<< HEAD
     const guardarProyectoHandler = async (txtCelularCliente, txtCorreoCliente,txtPasswordCliente) =>{
 
         //Obtener datos del local storage 
@@ -37,12 +38,45 @@ function registrarClienteP2() {
 
     }
 
+=======
+    
+
+    const cliente = require('./registrarClienteP1');
+    const Nombre = cliente.nombre
+    const Apellidos = cliente.apellidos
+    const Dni = cliente.dni
+
+    const guardarProyectoLS2 = (nombre,apellidos,dni,txtCelularCliente, txtCorreoCliente,txtPasswordCliente) =>{
+        const cliente2 = {
+            //const an = localStorage.getItem("clientes"),
+            nombre1 :nombre,
+            apellido1 :apellidos,
+            dni1:dni,
+            celular:txtCelularCliente,
+            correo: txtCorreoCliente,
+            password: txtPasswordCliente
+        }
+        //Se guardar cliente en local storage
+        //localStorage.setItem("clientes2",JSON.stringify(cliente2))
+        const mycliente2 = JSON.stringify(cliente2);
+        console.log(JSON.parse(mycliente2))
+    }
+
+    const data = new FormData();
+    data.append()
+
+
+>>>>>>> 21e0720bc564dae90e22afd54ace10e5a47ba119
     return <div>
         <header>
                 <Cabecera1/>  
             </header>
     
+<<<<<<< HEAD
         <RegistroP2 onGuardarCliente = {guardarProyectoHandler}/>
+=======
+        <RegistroP2 onGuardar ={guardarProyectoLS2}/>
+>>>>>>> 21e0720bc564dae90e22afd54ace10e5a47ba119
         <Footer />
         </div>
   }

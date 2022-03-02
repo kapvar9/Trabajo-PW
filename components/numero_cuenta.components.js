@@ -1,4 +1,16 @@
-const NumeroCuenta = () => {
+import { useState } from "react";
+
+const NumeroCuenta = (props) => {
+
+    const [txtNumeroTransaccion, setTxtNumeroTransaccion] = useState("")
+
+    const txtNumeroTransaccionChange =  (event) =>{
+        setTxtNumeroTransaccion(event.target.value)
+    } 
+
+    const butGuardarClick = () => {        
+        props.onGuardar(txtNumeroTransaccion)
+     }
 
     return <aside class="col-md-8">
         <div class="card ">
@@ -10,12 +22,14 @@ const NumeroCuenta = () => {
                                 <label for="txt_username" class="form label">Número de transacción</label>
                             </div>
                             <div className="col-md-1">
-                                <input type="text" id="disabledTextInput" />
+                            <input type="text"  id="disabledTextInput" 
+                defaultValue={txtNumeroTransaccion} onChange={txtNumeroTransaccionChange}/>
+                                
                             </div>
                         </div>
                         <div className="col-md-15">
 
-                            <a href="../historia30a">Siguiente </a>
+                            <a href="../historia30a" onClick={ butGuardarClick }>Siguiente </a>
                         </div>
                     </form>
                 </div>

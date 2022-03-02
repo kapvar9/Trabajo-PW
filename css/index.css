@@ -72,9 +72,10 @@
     margin-top: 20px;
 }
 #imagenEspera{
-    width: 400px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
     margin: auto;
+    margin-top: 50px;
     display: block;
 }
 .list-group{

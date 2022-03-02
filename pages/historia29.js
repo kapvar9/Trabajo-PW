@@ -5,6 +5,14 @@ import DireccionBilletera from "../components/direccionbilletera.components"
 import { Image } from "react-bootstrap"
 
 function Historia29() {
+
+    const guardarBilletera = (txtDireccionBilletera) =>{
+        const billetera = {
+            billetera:txtDireccionBilletera,            
+        }
+        
+        localStorage.setItem("billetera",JSON.stringify(billetera))
+    }
     const CerrarHandler = () => {
         location.href = "/"
     }
@@ -35,7 +43,7 @@ function Historia29() {
         <div className="mt-4">
             <div className="row mt-100 w-100">
                 <div>
-                    <DireccionBilletera />
+                    <DireccionBilletera onGuardar ={guardarBilletera}/>
                 </div>
             </div>
             <Footer />
