@@ -9,8 +9,7 @@ const guardarCliente = async(nombreCliente, apellidoCliente, DNICliente,celularC
         dni: DNICliente,
         correo : correoCliente,
         celular : celularCliente,
-        contraseña : passwordCliente,
-        estadovalidacion : "Por validar"
+        contraseña : passwordCliente
     })
 
     return clienteGuardado
