@@ -2,14 +2,14 @@ import { useState } from "react";
 
 const YaCasi2 = (props) => {
 
-    const [txtNumeroTransaccion3, setTxtNumeroTransaccion3] = useState("")
+    const [txtNumeroTransaccion2, setTxtNumeroTransaccion2] = useState("")
 
-    const txtNumeroTransaccion3Change =  (event) =>{
-        setTxtNumeroTransaccion3(event.target.value)
+    const txtNumeroTransaccion2Change =  (event) =>{
+        setTxtNumeroTransaccion2(event.target.value)
     } 
 
     const butGuardarClick = () => {        
-        props.onGuardar(txtNumeroTransaccion3)
+        props.onGuardar(txtNumeroTransaccion2)
      }
 
     return <aside class="col-md-8">
@@ -30,7 +30,7 @@ const YaCasi2 = (props) => {
                             </div>
                             <div className="col-md-1">
                             <input type="text"  id="disabledTextInput" 
-                defaultValue={txtNumeroTransaccion3} onChange={txtNumeroTransaccion3Change}/>
+                defaultValue={txtNumeroTransaccion2} onChange={txtNumeroTransaccion2Change}/>
                             </div>
                         </div>
                         <div className="col-md-15">
