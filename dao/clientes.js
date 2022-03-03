@@ -1,5 +1,5 @@
 import db from "../sequelize/models"
-
+//const Op = Sequelize.Op;
 
 const guardarCliente = async(nombreCliente, apellidoCliente, DNICliente,celularCliente,  correoCliente, passwordCliente) =>{
     //Se inserta valores en la tabla de la BD
@@ -21,7 +21,7 @@ const guardarCliente = async(nombreCliente, apellidoCliente, DNICliente,celularC
 const obtenerListaClientes = async() =>{
     const listadoClientes = await db.Cliente.findAll({
         order : [
-            ["id", "ASCGIT"]
+            ["id", "ASC"]
         ]
     })
     return listadoClientes
@@ -50,6 +50,28 @@ const modificarCliente =async(cliente)=>{
     //Se actualiza el proyecto en la BD
     await clienteAModificar.save()
 }
+
+//TODO: Funcion para filtrar cliente --> todavía causa
+/*const filtrarCliente = async() =>{
+    const clienteFiltrado = await db.Cliente.findAll({
+        where : {
+            nombre: {
+                [Op.like]: '%`${cliente.nombre}%`'
+            },
+            dni:{
+                [Op.like]:'%`${cliente.dni}%`'
+            },
+            apellidos : {
+                [Op.like]:'%`${cliente.apellidos}%`'
+            },
+            correo : {
+                [Op.like]:'%`${cliente.correo}%`'
+            }
+        }
+    })
+    return clienteFiltrado
+}*/
+
 
 //Se exportan metodos
 export {guardarCliente,obtenerListaClientes, obtenerCliente,modificarCliente}

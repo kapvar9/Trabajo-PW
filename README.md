@@ -32,3 +32,22 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+##Crear aplicacion en la nube
+
+Nombre proyecto en Heroku: dbproyectopw
+
+En postgress:
+-Create server:
+Name: BDPGTrabajo
+-Connection
+
+En Heroku:
+Cadena de conexion:
+postgres://stauvhaunxhxas:7ec59b7205ddc7bb4839537545b9afa110fa3be0524aee4294b2ce4c533379f1@ec2-54-157-160-218.compute-1.amazonaws.com:5432/d68cshjeg561pn
+
+HOST: ec2-54-157-160-218.compute-1.amazonaws.com
+PORT: 5432
+USERNAME: stauvhaunxhxas
+PASSWORD: 7ec59b7205ddc7bb4839537545b9afa110fa3be0524aee4294b2ce4c533379f1
+NOMBRE_BD:d68cshjeg561pn

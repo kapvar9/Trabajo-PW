@@ -1,5 +1,5 @@
 
-const { guardarCliente, obtenerListaClientes,modificarCliente} = require("../../../dao/clientes")
+const { guardarCliente, obtenerListaClientes,modificarCliente,filtrarCliente} = require("../../../dao/clientes")
 
 
 const clientesHandler = async(req,res) =>{
@@ -17,7 +17,7 @@ const clientesHandler = async(req,res) =>{
     
     }else if(req.method == "GET"){
         const clientes = await obtenerListaClientes()
-
+        //const clientesFiltrados = await filtrarCliente()
         res.json({
             clientes: clientes,   
         })
