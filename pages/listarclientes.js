@@ -48,10 +48,15 @@ function ListarClientes () {
     }, [])
 
     //Funcion para actualizar estado de proyecto
-    const actualizarClienteHandler = async (id,estadovalidacion) => {
+    const actualizarClienteHandler = async (id, nombreCliente, apellidosCliente, dniCliente,correoCliente, celularCliente,estadovalidacionCliente) => {
         const cliente = {
             id:id,
-            estadovalidacion : estadovalidacion
+            nombre: nombreCliente,
+            apellidos : apellidosCliente,
+            dni: dniCliente,
+            correo : correoCliente,
+            celular : celularCliente,
+            estadovalidacion: estadovalidacionCliente
         }
 
         //peticion a backend para modificar usuario

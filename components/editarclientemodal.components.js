@@ -38,7 +38,7 @@ const EditarClienteModal = (props) =>{
 
     const butGuardarOnClick = () => {
         if (props.modo == "edicion") {
-            props.onActualizarCliente(txtEstadoValidacion)
+            props.onActualizarCliente(idCliente, txtNombreCliente, txtApellidosCliente, txtDniCliente, txtCorreoCliente, txtCelularCliente,txtEstadoValidacion)
         }
         setTxtEstadoValidacion(0)
     }
@@ -100,9 +100,9 @@ const EditarClienteModal = (props) =>{
                 </label>
                 <select className="form-select" defaultValue={ txtEstadoValidacion }
                 onChange={ txtEstadoValidacionOnChange }>
-                    <option> ------ Seleccione una opción ------</option>
-                    <option>Por validar</option>
-                    <option>Validado</option>
+                    <option value={0}> ------ Seleccione una opción ------</option>
+                    <option value="Por validar">Por validar</option>
+                    <option value="Validado">Validado</option>
                 </select>
             </div>
             
