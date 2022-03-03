@@ -12,21 +12,21 @@ const YaCasi2 = (props) => {
         props.onGuardar(txtNumeroTransaccion2)
      }
 
-    return <aside class="col-md-8">
-        <div class="card ">
-            <div class="card-body" >
+    return <aside className="col-md-8">
+        <div className="card ">
+            <div className="card-body" >
                 <div className="container text-center">
                     <form className="form-label-group">
                         <div className="col-md-12">
-                            <label for="txt_username" class="form label"><b>¡Ya casi estamos listos!</b></label>
+                            <label htmlFor="txt_username" className="form label"><b>¡Ya casi estamos listos!</b></label>
                         </div>
                         <div className="col-md-15">
-                            <label for="txt_username" class="form label">Nuestro número de cuenta BCP es &nbsp;XXX-XXXXX-XXXXXXXXXX</label>
+                            <label htmlFor="txt_username" className="form label">Nuestro número de cuenta BCP es &nbsp;XXX-XXXXX-XXXXXXXXXX</label>
                         </div>
 
                         <div className="row mb-1">
                             <div className="col-md-7">
-                                <label for="txt_username" class="form label">Número de transacción</label>
+                                <label htmlFor="txt_username" className="form label">Número de transacción</label>
                             </div>
                             <div className="col-md-1">
                             <input type="text"  id="disabledTextInput" 

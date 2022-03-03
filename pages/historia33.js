@@ -50,12 +50,12 @@ function Historia33() {
                     </div>
                 </div>
             </div>
-            <div class="col-sm-4">
-                <div class="card">
-                    <div class="card-body">
+            <div className="col-sm-4">
+                <div className="card">
+                    <div className="card-body">
                         <div className="container text-center">
-                            <h5 class="card-title">5200</h5>
-                            <p class="card-text">Monto total operado de BitCoins</p>
+                            <h5 className="card-title">5200</h5>
+                            <p className="card-text">Monto total operado de BitCoins</p>
                         </div>
                     </div>
                 </div>

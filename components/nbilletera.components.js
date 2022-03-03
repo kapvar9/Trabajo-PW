@@ -1,12 +1,12 @@
 const nbilletera = () => {
 
-    return <aside class="col-md-8">
-        <div class="card ">
-            <div class="card-body" >
+    return <aside className="col-md-8">
+        <div  className="card ">
+            <div  className="card-body" >
                 <div className="container text-center">
                     <form className="form-label-group">
                         <div className="col-md-12">
-                            <label for="txt_username" class="form label"><b>¡Ingresa tu número de billetera !</b></label>
+                            <label htmlFor="txt_username"  className="form label"><b>¡Ingresa tu número de billetera !</b></label>
                         </div>
                         
                         <div className="row mb-3">

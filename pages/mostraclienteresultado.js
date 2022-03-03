@@ -51,7 +51,7 @@ function ResultadoCliente () {
                                 <td>12345678</td>
                                 <td>evelyn.cotrina@grupo6.com.pe</td>
                                 <td>999999999</td>
-                                <td><a href="/editarcliente"><EditIcon/></a><DeleteIcon/></td>
+                                <td><EditIcon/><DeleteIcon/></td>
                             </tr>
                         </tbody>
                     </table>
