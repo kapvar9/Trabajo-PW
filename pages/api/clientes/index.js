@@ -1,5 +1,5 @@
 
-const { guardarCliente, obtenerListaClientes} = require("../../../dao/clientes")
+const { guardarCliente, obtenerListaClientes,modificarCliente} = require("../../../dao/clientes")
 
 
 const clientesHandler = async(req,res) =>{
@@ -21,8 +21,18 @@ const clientesHandler = async(req,res) =>{
         res.json({
             clientes: clientes,   
         })
-    }
-    else{
+    //Este metodo se llama para actualizar el estado del cliente
+    }else if(req.method == "PUT"){
+        //Se pasa la data
+        const data = JSON.parse(req.body)
+        //Se llama a la funcion modificar proyecto
+        await modificarCliente(data)
+        //Se retorna mensaje vacio porque ya se modifico
+        res.json({
+            msg: ""
+        })
+        
+    }else{
         res.status(400).json({
             msg: "Metodo no definido"
         })
