@@ -6,12 +6,12 @@ import { Image } from "react-bootstrap"
 
 function Historia31a() {
 
-    const guardarTransaccion3 = (txtNumeroTransaccion3) =>{
-        const transaccion3 = {
-            transaccion3:txtNumeroTransaccion3,            
+    const guardarTransaccion2 = (txtNumeroTransaccion2) =>{
+        const transaccion2 = {
+            transaccion2:txtNumeroTransaccion2,            
         }
         
-        localStorage.setItem("transaccion3",JSON.stringify(transaccion3))
+        localStorage.setItem("transaccion2",JSON.stringify(transaccion2))
     }
 
 
@@ -45,7 +45,7 @@ function Historia31a() {
         <div className="mt-4">
             <div className="row mt-100 w-100">
                 <div>
-                    <YaCasi2 onGuardar ={guardarTransaccion3}/>
+                    <YaCasi2 onGuardar ={guardarTransaccion2}/>
                 </div>
             </div>
             <Footer />
