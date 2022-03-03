@@ -27,7 +27,7 @@ function Historia30b() {
             <MenuNavegacionCliente />
         </div>
         <div>
-            <span id="texto 1" class="ejemplo1">
+            <span id="texto 1" className="ejemplo1">
                 <font face="Cascadia Code" color="black" size="40">Operación de venta ## </font>
                 <div><font face="Cascadia Code" color="black" size="40">Paso 3 de 3</font></div>
             </span>

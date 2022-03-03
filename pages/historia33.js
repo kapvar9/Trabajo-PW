@@ -39,13 +39,13 @@ function Historia33() {
         <div>
             <MenuNavegacionAdmin />
         </div>
-        <div class="row">
-            <div class="col-sm-4">
-                <div class="card">
-                    <div class="card-body">
+        <div className="row">
+            <div className="col-sm-4">
+                <div className="card">
+                    <div className="card-body">
                         <div className="container text-center">
-                            <h5 class="card-title">1</h5>
-                            <p class="card-text">Operación realizada</p>
+                            <h5 className="card-title">1</h5>
+                            <p className="card-text">Operación realizada</p>
                         </div>
                     </div>
                 </div>
