@@ -6,12 +6,12 @@ import { Image } from "react-bootstrap"
 
 function Historia28() {
 
-    const guardarTransaccion = (txtNumeroTransaccion) =>{
-        const transaccion = {
-            transaccion:txtNumeroTransaccion,            
+    const guardarCuenta = (txtNumeroCuenta) =>{
+        const cuenta = {
+            Cuenta:txtNumeroCuenta,            
         }
         
-        localStorage.setItem("transaccion",JSON.stringify(transaccion))
+        localStorage.setItem("cuenta",JSON.stringify(cuenta))
     }
 
     const CerrarHandler = () => {
@@ -44,7 +44,7 @@ function Historia28() {
         <div className="mt-4">
             <div className="row mt-100 w-100">
                 <div>
-                    <NumeroCuenta onGuardar ={guardarTransaccion}/>
+                    <NumeroCuenta onGuardar ={guardarCuenta}/>
                 </div>
             </div>
             <Footer />
