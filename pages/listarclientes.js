@@ -48,8 +48,9 @@ function ListarClientes () {
     }, [])
 
     //Funcion para actualizar estado de proyecto
-    /*const actualizarClienteHandler = async (estadovalidacion) => {
+    const actualizarClienteHandler = async (id,estadovalidacion) => {
         const cliente = {
+            id:id,
             estadovalidacion : estadovalidacion
         }
 
@@ -65,7 +66,7 @@ function ListarClientes () {
             const dataCliente = await obtenerClientesHTTP()
             setListadoClientes(dataCliente.clientes)
         }
-    }*/
+    }
 
     //Se crea funcion donde se va a editar el proyecto
     //Con el id quiero obtener el dato del cliente
@@ -109,6 +110,7 @@ function ListarClientes () {
             <EditarClienteModal
               mostrar={debeMostrarModal}
               ocultar={onModalClose}
+              onActualizarCliente={ actualizarClienteHandler }
               cliente={cliente}
               modo={modoFormulario}
             />

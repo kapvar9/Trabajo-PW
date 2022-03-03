@@ -10,6 +10,7 @@ const EditarClienteModal = (props) =>{
     const [txtDniCliente, setTxtDniCliente] = useState(0)
     const [txtCelularCliente, setTxtCelularCliente] = useState(0)
     const [txtCorreoCliente, setTxtCorreoCliente] = useState("")
+    const [txtEstadoValidacion, setTxtEstadoValidacion] = useState(0)
 
 
     
@@ -25,19 +26,28 @@ const EditarClienteModal = (props) =>{
         }
     }, [props.cliente])
 
+
+    const txtEstadoValidacionOnChange = (event) => {
+        setTxtEstadoValidacion(event.target.value)
+    }
+
+
     const butCloseFormOnClick = () => {
         props.ocultar()
     }
 
     const butGuardarOnClick = () => {
         if (props.modo == "edicion") {
-            props.onActualizarProyecto(idCliente, txtNombreCliente,txtApellidosCliente, txtDniCliente,txtCelularCliente,txtCorreoCliente)
+            props.onActualizarCliente(txtEstadoValidacion)
         }
+        setTxtEstadoValidacion(0)
     }
 
+    //Pruebas
     if(props.modo == "edicion" && props.cliente !=null){
         console.log("EDICION: ", props.cliente.id)
     }
+
     return <Modal show={ props.mostrar } 
             onHide={butCloseFormOnClick }>
         <Modal.Header closeButton>
@@ -88,6 +98,12 @@ const EditarClienteModal = (props) =>{
                 <label className="form-label">
                     Estado de validacion
                 </label>
+                <select className="form-select" defaultValue={ txtEstadoValidacion }
+                onChange={ txtEstadoValidacionOnChange }>
+                    <option> ------ Seleccione una opción ------</option>
+                    <option>Por validar</option>
+                    <option>Validado</option>
+                </select>
             </div>
             
         </form>
