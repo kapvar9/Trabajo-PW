@@ -10,7 +10,7 @@ const EditarClienteModal = (props) =>{
     const [txtDniCliente, setTxtDniCliente] = useState(0)
     const [txtCelularCliente, setTxtCelularCliente] = useState(0)
     const [txtCorreoCliente, setTxtCorreoCliente] = useState("")
-    const [txtEstadoValidacion, setTxtEstadoValidacion] = useState(0)
+    const [txtEstadoValidacion, setTxtEstadoValidacion] = useState("")
 
 
     
@@ -23,10 +23,11 @@ const EditarClienteModal = (props) =>{
             setTxtDniCliente(props.cliente.dni)
             setTxtCelularCliente(props.cliente.celular)
             setTxtCorreoCliente(props.cliente.correo)
+            setTxtEstadoValidacion(props.cliente.estadovalidacion)
         }
     }, [props.cliente])
 
-
+    //Se crea funcion para obtener el valor del estado de validacion
     const txtEstadoValidacionOnChange = (event) => {
         setTxtEstadoValidacion(event.target.value)
     }

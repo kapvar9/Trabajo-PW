@@ -9,7 +9,8 @@ const guardarCliente = async(nombreCliente, apellidoCliente, DNICliente,celularC
         dni: DNICliente,
         correo : correoCliente,
         celular : celularCliente,
-        contraseña : passwordCliente
+        contraseña : passwordCliente,
+        estadovalidacion : "Por validar"
     })
 
     return clienteGuardado
@@ -18,7 +19,11 @@ const guardarCliente = async(nombreCliente, apellidoCliente, DNICliente,celularC
 
 //Funcion obtener lista clientes
 const obtenerListaClientes = async() =>{
-    const listadoClientes = await db.Cliente.findAll()
+    const listadoClientes = await db.Cliente.findAll({
+        order : [
+            ["id", "ASC"]
+        ]
+    })
     return listadoClientes
  }
 
