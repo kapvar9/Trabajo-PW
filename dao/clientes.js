@@ -21,7 +21,7 @@ const guardarCliente = async(nombreCliente, apellidoCliente, DNICliente,celularC
 const obtenerListaClientes = async() =>{
     const listadoClientes = await db.Cliente.findAll({
         order : [
-            ["id", "ASC"]
+            ["id", "ASCGIT"]
         ]
     })
     return listadoClientes
